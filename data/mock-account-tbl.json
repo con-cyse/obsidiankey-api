@@ -1,1 +1,30 @@
-{} 
+{
+    "standard": {
+        "id": "3aa74625-a00e-58c7-bb81-4c38b9e4a8c5",
+        "fullName": "Stan Dard",
+        "hash": "$2b$12$QSJPaDT4ZYM71LWdGTjIx.gJij0L/.lE.fnmKKNqSzBxpzN9YK5jy",
+        "userLevel": 0,
+        "createdAt": 1775482888
+    },
+    "moderator": {
+        "id": "45631eaa-f563-5dfa-a8b0-4cae1f5e75a2",
+        "fullName": "Mode Rator",
+        "hash": "$2b$12$FVmuhg5T72OieU9XRrd9dOrKbXZKc2Q3y4M1ZhAbQfs.83c/cUd.e",
+        "userLevel": 1,
+        "createdAt": 1775482943
+    },
+    "admin": {
+        "id": "ae6c10d0-0b13-554c-b976-a05d8a18f0cc",
+        "fullName": "Ad Min",
+        "hash": "$2b$12$BmuRZW3CsMq5mSmRdhgUhuaOBPacgoIg7TbR9APZuPdlwoD7IIgdG",
+        "userLevel": 2,
+        "createdAt": 1775482985
+    },
+    "superadmin": {
+        "id": "e48cddda-f3b8-5ca2-9fc5-28be55da99b0",
+        "fullName": "Super Admin",
+        "hash": "$2b$12$T6dh3bCUeh2XQYv9NfvD5u0qFhvhLilJrRONI2qL97TnXZTpssY.a",
+        "userLevel": 3,
+        "createdAt": 1775483024
+    }
+}
