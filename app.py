@@ -20,8 +20,12 @@ CORS(app)
 def index(): 
     return set_cors({}) 
  
-@app.route("/authorize", methods=["POST"]) 
+@app.route("/authorize", methods=["POST"])
+@app.route("/login", methods=["GET", "POST"])
 def authorize(): 
+    if request.method == "GET": 
+        return set_cors({"message": "Use POST with username and password."}), 405 
+
      
     payload = request.get_json() 
     uname = payload.get("username", "") 
@@ -83,7 +87,7 @@ def authorize_user(uname, pw):
         account = accounts[uname] 
         hashed = account["hash"].encode() 
          
-        if bcrypt.hashpw(pw.encode(), hashed): 
+        if bcrypt.checkpw(pw.encode(), hashed): 
             user_level = account["userLevel"] 
             full_name = account["fullName"] 
             return user_level, full_name 
